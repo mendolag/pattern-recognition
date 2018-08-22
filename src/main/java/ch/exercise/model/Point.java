@@ -17,7 +17,7 @@ public class Point {
 	private double y;
 
 	@JsonCreator
-	public Point(@JsonProperty("x") double x, @JsonProperty("y") double y) {
+	public Point(@JsonProperty(value = "x", required = true) double x, @JsonProperty(value = "y", required = true) double y) {
 		this.x = x;
 		this.y = y;
 	}
